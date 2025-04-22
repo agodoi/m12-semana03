@@ -11,10 +11,13 @@
 3) Topologias de redes;
 4) TCP e UDP;
 5) IPV4: é o sistema de endereçamento de computadores (32 bits);
-  5.1) Sub-rede: é uma divisão lógica de uma rede maior;
-  5.2) CIDR (/número): é a quantidade de bits reservados para identificar a rede (e o restante fica para os hosts);
-  5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
-6) 
+
+   5.1) Sub-rede: é uma divisão lógica de uma rede maior;
+
+   5.2) CIDR (/número): é a quantidade de bits reservados para identificar a rede (e o restante fica para os hosts);
+
+   5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
+7) 
 
 ## Vantagens desse Conhecimento
 
