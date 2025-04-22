@@ -422,12 +422,97 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 
 ## Sistemas Operacionais
 
-Nessa seção, vamos dicutir 3 problemas fundamentais para o armazenamento de informações a longo prazo:
+1.1) O que é um Sistema Operacional?
+✅ Um Sistema Operacional (SO) é o software principal que atua como ponte entre o hardware (físico) e os programas (aplicações) que você utiliza.
 
-1. Deve ser possível armazenar um volume muito grande de informações.
-2. As informações devem sobreviver ao término do processo que as estão utilizando.
-3. Vários processos devem ser capazes de acessar as informações concomitante- mente.
+Ele gerencia recursos como:
 
-A solução é armazenar dados em **arquivos**, em discos. Ele só pode desaperecer se o criador deletá-lo.
+* Memória
+* Processador (CPU)
+* Dispositivos de entrada e saída (mouse, teclado, disco rígido)
+* Execução de programas
 
+✅ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo funcione de forma eficiente e segura, sem conflitos.
 
+🖥️ Exemplos de sistemas operacionais:
+
+* Windows
+* Linux
+* MacOS
+* Android
+* iOS
+
+1.2) História dos Sistemas Operacionais
+
+* 1950: computadores eram enormes e operados manualmente (sem SO). Programadores controlavam diretamente o hardware.
+* 1960: surgem os primeiros sistemas operacionais batch: programas executados em lotes (ex: IBM OS/360). Surgimento de conceitos como sistemas de tempo compartilhado: vários usuários usavam o mesmo computador ao mesmo tempo (ex: MULTICS).
+* 1970: Unix foi criado: sistema modular, escrito em C, revolucionando a portabilidade. Aparecem os primeiros micros (computadores pessoais), surgem sistemas como CP/M.
+* 1980-1990: popularização de sistemas para PCs: MS-DOS, depois Windows. Interfaces gráficas (GUI) tornam o uso mais amigável. Evolução dos sistemas de rede.
+* 2000 em diante: explosão do Linux e sistemas baseados em Open Source. Sistemas embarcados em celulares (Android, iOS). Virtualização e sistemas para nuvem (AWS, Azure, etc).
+
+1.3) Conceitos de Sistemas Operacionais
+🧠 Principais conceitos:
+
+* Processo: é um programa em execução. Pode ser interrompido, reativado, finalizado.
+* Thread: menor unidade de processamento dentro de um processo. Compartilha recursos do processo.
+* Gerenciamento de Memória: como o SO organiza a memória RAM para diferentes processos.
+* Gerenciamento de Arquivos: organização e controle de acesso aos dados armazenados em discos.
+* Gerenciamento de Dispositivos: comunicação entre o computador e seus periféricos (impressoras, HDs, teclado).
+* Segurança e Proteção: impede que processos interfiram uns nos outros, protege o sistema contra acessos não autorizados.
+* Interface de Usuário: pode ser linha de comando (CLI) ou interface gráfica (GUI).
+
+1.4) Como são feitas as chamadas de sistema?
+📞 Chamadas de sistema (System Calls) são portas de entrada para que os programas comuniquem-se com o Sistema Operacional.
+
+➡️ Um programa não acessa diretamente o hardware (por segurança).
+➡️ Em vez disso, ele faz uma chamada de sistema, pedindo ao SO para fazer algo por ele.
+
+🛠️ Exemplos:
+
+* open() ➔ abrir um arquivo
+* read() ➔ ler dados de um arquivo
+* write() ➔ escrever dados em um arquivo
+* fork() ➔ criar um novo processo
+* exec() ➔ executar um novo programa
+
+✅ Como funciona:
+
+a) Um programa faz uma chamada de sistema.
+b) O SO intercepta essa chamada através de uma interrupção.
+c) O SO executa o serviço requisitado em modo privilegiado (kernel mode).
+d) O resultado é retornado para o programa.
+
+1.5) Arquiteturas de Sistemas Operacionais
+🏛️ Existem várias formas de estruturar um SO. As principais:
+
+Monolítica
+Todo o sistema (drivers, gerenciamento de processos, memória) é um grande bloco único.
+
+Exemplo: primeiros Unix.
+
+Vantagem: rápido.
+Desvantagem: difícil de manter ou modificar.
+
+Microkernel
+Apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
+
+Exemplo: MINIX, QNX.
+
+Vantagem: modularidade e segurança.
+Desvantagem: pode ser mais lento (mais comunicação entre componentes).
+
+Camadas
+O SO é organizado em camadas, onde uma depende da outra.
+
+Exemplo: THE System.
+
+Vantagem: fácil depurar.
+Desvantagem: pode ser menos eficiente.
+
+Máquina Virtual
+Cria ambientes virtuais para rodar vários sistemas no mesmo hardware.
+
+Exemplo: VMware, Hyper-V.
+
+Vantagem: isolamento e flexibilidade.
+Desvantagem: sobrecarga de performance.
