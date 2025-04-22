@@ -233,9 +233,7 @@ porque 1 1 1 1 1 1 = 63
 2️⃣ Descubra qual o tamanho da sub-rede necessária.
 ✅ Pergunta: Quantos bits você precisa para os hosts?
 
-   * Use esta fórmula:
-   * Hosts possível = 2^n - 2
-   * Hosts possível = 2<sup>n</sup> - 2
+   * Use esta fórmula: **Hosts possível = 2<sup>n</sup> - 2**
    * (n = número de bits para hosts)
    * Procure o menor "n" que satisfaça o número de hosts que você precisa.ˊ
  
