@@ -414,14 +414,18 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 
 - Faixa Classe: 192.168.0.0 a 192.168.255.255
 
-# Kahoot!
+--- 
 
-# Sistemas Operacionais
+## Kahoot!
 
+---
 
+## Sistemas Operacionais
 
+Nessa seção, vamos dicutir 3 problemas fundamentais para o armazenamento de informações a longo prazo:
 
-https://aws.amazon.com/pt/what-is/cloud-networking/#:~:text=A%20rede%20em%20nuvem%20%C3%A9%20apenas%20um%20componente%20da%20infraestrutura,como%20servidores%2C%20armazenamento%20e%20rede
+1. Deve ser possível armazenar um volume muito grande de informações.
+2. As informações devem sobreviver ao término do processo que as estão utilizando.
+3. Vários processos devem ser capazes de acessar as informações concomitante- mente.
 
-<img src="https://github.com/agodoi/m05-semana10/blob/main/imgs/transistor-cortado.png" width="500">
-
+A solução é armazenar dados em **arquivos**, em discos.
