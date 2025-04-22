@@ -1,10 +1,10 @@
-# Atendimento do Professor
+## Atendimento do Professor
 
-## Terças e quintas. Professor de horário parcial. Nesses 2 dias, podem contar comigo!
+### Terças e quintas. Professor de horário parcial. Nesses 2 dias, podem contar comigo!
 
-# Semana 03 - Sistemas Operacionais e Redes de Computadores
+## Semana 03 - Sistemas Operacionais e Redes de Computadores
 
-## 🧠 Vamos revisar nessa aula:
+### 🧠 Vamos revisar nessa aula:
 
 1) Organização dos protocolos em camadas (Modelo OSI);
 2) Protocolo IPV6;
@@ -23,7 +23,7 @@
 7) Sistemas Operacionais
 8) 
 
-## Vantagens desse Conhecimento
+### Vantagens desse Conhecimento
 
 * Organizar suas aplicações Vivo em sub-redes privadas e seguras;
 * Entender como a sub-rede pública da Vivo isola a sub-rede privada;
@@ -35,16 +35,16 @@
 
 ---
 
-## Tipos de redes
+### Tipos de redes
 
-### Por que preciso saber os tipos de rede?
+#### Por que preciso saber os tipos de rede?
 
-### Local
+#### Local
   - **PAN (Personal Area Network):** basicamente feita de dispositivos de curto alcance, em especial, os sem fio, via bluetooth;
   - **LAN (Local Area Network):** feita de cabos e WiFi, conectando computadores, notebooks, impressores e servidores
   - **MAN (Metropolitan Area Network):** feita de fibra óptica e rádio tipo minilink
     
-### Mundial
+#### Mundial
   - **WAN (Wide Area Network):** feita de fibra óptica e satélite. A Internet se mistura com a WAN.
 
 Ambas as redes servem para conectar os hosts (que são end-devices numa grande rede chamada Internet).
@@ -59,9 +59,9 @@ Alguns detaques da figura:
 
 ---
 
-## Modelo OSI
+### Modelo OSI
 
-### Por que preciso entender o modelo OSI?
+#### Por que preciso entender o modelo OSI?
 
 * **Camada 07 - Aplicação :** cuida de tudo o que aparece na sua tela, é a aplicação;
 * **Camada 06 - Apresentação :** é o tradutor com criptografia/descriptografia;
@@ -73,13 +73,13 @@ Alguns detaques da figura:
 
 ---
 
-## Demonstração de Montagem de Cabo UTP
+### Demonstração de Montagem de Cabo UTP
 
 [VÍDEO](https://www.youtube.com/watch?v=OT_5EjDfD6M)
 
-## Topologias de Redes
+### Topologias de Redes
 
-### Por que preciso conhecer as topologias de redes?
+#### Por que preciso conhecer as topologias de redes?
 
 Os hosts podem ser organizados em algum tipo de topologia a seguir:
 
@@ -91,9 +91,9 @@ O mais comum para o ambiente de computadores é o **Estrela** que também pode s
 
 ---
 
-## Protocolo IPV4 vs IPV6
+### Protocolo IPV4 vs IPV6
 
-### Por que existe o IPv4 e o IPv6?
+#### Por que existe o IPv4 e o IPv6?
 
 A figura a seguir aponta as principais diferenças. Contudo, na rede local, só se usa o IPV4.
 
@@ -101,24 +101,24 @@ A figura a seguir aponta as principais diferenças. Contudo, na rede local, só 
 
 ---
 
-## Redes e Sub-redes
+### Redes e Sub-redes
 
 As redes de computadores servem para criar hierarquias de estações de trabalho dentro de numa organização. Por exemplo, numa instituição de ensino, existe a rede de alunos, a de professores e a administrativa. As redes geralmente não se conversam e há critérios de segurança entre elas.
 
 E as sub-redes são redes menores que nascem a partir de uma rede, e para isso, precisamos do CIDR (Classes Inter-Domain Routing) para organizar essas redes dentro de redes.
 
-## Basicamente, o que você precisa saber pra dominar esse trem?
+### Basicamente, o que você precisa saber pra dominar esse trem?
 
 | Fazer conversão de binária para decimal.|
 |-|
 
-## Exemplo 01:
+### Exemplo 01:
 
-### Dado o IP 10.0.0.0/26
-#### a) Qual é o endereço de rede?
-#### b) Qual é o primeiro IPV4 disponível?
-#### c) Qual é o endereço de broadcast na rede?
-#### d) Qual é o último endereço IPV4 útil disponível?
+#### Dado o IP 10.0.0.0/26
+a) Qual é o endereço de rede?
+b) Qual é o primeiro IPV4 disponível?
+c) Qual é o endereço de broadcast na rede?
+d) Qual é o último endereço IPV4 útil disponível?
 
 O /26 significa que o CIDR = 26, então significa 26 bits são fixos, isto é, uma máscara de 26 bits "1" e 6 bits irrelevantes marcados por x.
 
@@ -142,7 +142,7 @@ e) Qual é o último endereço IPV4 útil disponível?
 
 f) Quantos hosts cabem nessa rede?
 
-### a) Máscara de rede
+#### a) Máscara de rede
 
 Máscara de sub-rede é um valor numérico que é usado em redes de computadores para dividir uma rede IP em sub-redes menores. Essa máscara é usada em conjunto com um endereço IP para determinar quais bits no endereço IP representam a rede e quais bits representam o host dentro dessa rede.
 
@@ -153,7 +153,7 @@ A parte da rede é indicada com **1**. A parte de hosts é indicada com **0** ou
 | 255 | 255 | 255 | 192 |
 
 
-### b) Endereço de rede é o primeiro endereço da faixa (quando os bits X são só ZERO): 
+#### b) Endereço de rede é o primeiro endereço da faixa (quando os bits X são só ZERO): 
 
 Pega o IP original dado no enunciado:
 
@@ -179,7 +179,7 @@ Finalmente, coloque **0** no lugar dos **X** para encontrar o endereço da rede,
 
 Que é o mesmo que **10.0.0.0**
 
-### c) Qual é primeiro IP útil disponível?
+#### c) Qual é primeiro IP útil disponível?
 
 É sempre o primeiro após o endereço da rede. Portanto:
 
@@ -188,7 +188,7 @@ Que é o mesmo que **10.0.0.0**
 | 10 | 0 | 0 | 1 |
 
 
-### d) Qual o endereço de broadcast da rede? 
+#### d) Qual o endereço de broadcast da rede? 
 
 Quando os **X** flexíveis são semopre **1**: 
 
@@ -202,7 +202,7 @@ Resulta em:
 
 porque 1 1 1 1 1 1 = 63
 
-### e) Qual é o último endereço ÚTIL da faixa?
+#### e) Qual é o último endereço ÚTIL da faixa?
 
 É sempre o penúltimo endereço do broadcast.
 
@@ -210,7 +210,7 @@ porque 1 1 1 1 1 1 = 63
 |-|-|-|-|
 
 
-### f) Qual é a quantidade de hosts possíveis nessa rede?
+#### f) Qual é a quantidade de hosts possíveis nessa rede?
 
 É só contar a quantidade de endereços do 1º até um antes do broadcast, que nesse caso será do 1 ao 62, portanto, 62 hosts possíveis de serem endereçados nessa rede. Em outras palavras, cabem 62 máquinas ou end-points nessa rede.
 
@@ -224,7 +224,7 @@ porque 1 1 1 1 1 1 = 63
 
 ---
 
-### 🛠️ Resumo do Passo a Passo para montar uma sub-rede:
+#### 🛠️ Resumo do Passo a Passo para montar uma sub-rede:
 
 1️⃣ Descubra quantos computadores (hosts) você precisa.
 ✅ Inclua 2 endereços extras:
@@ -305,13 +305,13 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 
 ---
 
-## Exemplo 02: dado o IP 172.16.1.43/28
-#### a) Qual é máscara de sub-rede?
-#### b) Qual é o endereço de rede?
-#### c) Qual é o primeiro IPV4 disponível?
-#### d) Qual é o endereço de broadcast na rede?
-#### e) Qual é o último endereço IPV4 útil disponível?
-#### f) Quantos hosts são possíveis?
+### Exemplo 02: dado o IP 172.16.1.43/28
+a) Qual é máscara de sub-rede?
+b) Qual é o endereço de rede?
+c) Qual é o primeiro IPV4 disponível?
+d) Qual é o endereço de broadcast na rede?
+e) Qual é o último endereço IPV4 útil disponível?
+f) Quantos hosts são possíveis?
 
 **Respostas:**
 - Máscara de sub-rede: 255.255.255.240
@@ -323,13 +323,13 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 
 ---
 
-## Exemplo 03: dado o IP 10.0.8.0/21
-#### a) Qual é máscara de sub-rede?
-#### b) Qual é o endereço de rede?
-#### c) Qual é o primeiro IPV4 disponível?
-#### d) Qual é o endereço de broadcast na rede?
-#### e) Qual é o último endereço IPV4 útil disponível?
-#### f) Quantos hosts são possíveis?
+### Exemplo 03: dado o IP 10.0.8.0/21
+a) Qual é máscara de sub-rede?
+b) Qual é o endereço de rede?
+c) Qual é o primeiro IPV4 disponível?
+d) Qual é o endereço de broadcast na rede?
+e) Qual é o último endereço IPV4 útil disponível?
+f) Quantos hosts são possíveis?
 
 **Respostas:**
 - Máscara de sub-rede: 255.255.248.0
@@ -341,15 +341,15 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 
 ---
 
-## Exemplo 04: 10.0.128.0/17
+### Exemplo 04: 10.0.128.0/17
 
-### Dado o IP
-#### a) Qual é máscara de sub-rede?
-#### b) Qual é o endereço de rede?
-#### c) Qual é o primeiro IPV4 disponível?
-#### d) Qual é o endereço de broadcast na rede?
-#### e) Qual é o último endereço IPV4 útil disponível?
-#### f) Quantos hosts são possíveis?
+#### Dado o IP
+a) Qual é máscara de sub-rede?
+b) Qual é o endereço de rede?
+c) Qual é o primeiro IPV4 disponível?
+d) Qual é o endereço de broadcast na rede?
+e) Qual é o último endereço IPV4 útil disponível?
+f) Quantos hosts são possíveis?
 
 **Respostas:**
 - Máscara de sub-rede: 255.255.128.0
@@ -361,15 +361,15 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 
 ---
 
-## Exemplo 05: 10.0.1.64/26
+### Exemplo 05: 10.0.1.64/26
 
-### Dado o IP
-#### a) Qual é máscara de sub-rede?
-#### b) Qual é o endereço de rede?
-#### c) Qual é o primeiro IPV4 disponível?
-#### d) Qual é o endereço de broadcast na rede?
-#### e) Qual é o último endereço IPV4 útil disponível?
-#### f) Quantos hosts são possíveis?
+#### Dado o IP
+a) Qual é máscara de sub-rede?
+b) Qual é o endereço de rede?
+c) Qual é o primeiro IPV4 disponível?
+d) Qual é o endereço de broadcast na rede?
+e) Qual é o último endereço IPV4 útil disponível?
+f) Quantos hosts são possíveis?
 
 **Respostas:**
 - Máscara de sub-rede: 255.255.255.192
@@ -381,26 +381,26 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 
 ---
 
-## Agora pense!
+### Agora pense!
 
 Imagine que você criou uma VPC 192.168.0.0/22 na AWS.
 
-#### a) Qual é máscara de sub-rede?
-#### b) Qual é o endereço de rede?
-#### c) Qual é o primeiro IPV4 disponível?
-#### d) Qual é o endereço de broadcast na rede?
-#### e) Qual é o último endereço IPV4 útil disponível?
-#### f) Quantos hosts são possíveis?
+a) Qual é máscara de sub-rede?
+b) Qual é o endereço de rede?
+c) Qual é o primeiro IPV4 disponível?
+d) Qual é o endereço de broadcast na rede?
+e) Qual é o último endereço IPV4 útil disponível?
+f) Quantos hosts são possíveis?
 
-## E também criou uma sub-rede pública 192.168.0.0/24 e uma sub-rede privada 192.168.1.0/24
+### E também criou uma sub-rede pública 192.168.0.0/24 e uma sub-rede privada 192.168.1.0/24
 
-#### a) Qual é máscara de cada sub-rede?
-#### b) Qual é o endereço de rede de cada sub-rede?
-#### c) Qual é o primeiro IPV4 disponível de cada sub-rede?
-#### d) Qual é o endereço de broadcast em cada rede-sub?
-#### e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
-#### f) Quantos hosts são possíveis em cada sub-rede?
-### g) As sub-redes de fato estão dentro da VPC? Justique!
+a) Qual é máscara de cada sub-rede?
+b) Qual é o endereço de rede de cada sub-rede?
+c) Qual é o primeiro IPV4 disponível de cada sub-rede?
+d) Qual é o endereço de broadcast em cada rede-sub?
+e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
+f) Quantos hosts são possíveis em cada sub-rede?
+g) As sub-redes de fato estão dentro da VPC? Justique!
 
 A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais são:
 
@@ -428,4 +428,6 @@ Nessa seção, vamos dicutir 3 problemas fundamentais para o armazenamento de in
 2. As informações devem sobreviver ao término do processo que as estão utilizando.
 3. Vários processos devem ser capazes de acessar as informações concomitante- mente.
 
-A solução é armazenar dados em **arquivos**, em discos.
+A solução é armazenar dados em **arquivos**, em discos. Ele só pode desaperecer se o criador deletá-lo.
+
+
