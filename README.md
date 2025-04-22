@@ -19,6 +19,7 @@
    5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
 
 **6) INTERVALO**
+
 7) Sistemas Operacionais
 8) 
 
@@ -202,6 +203,110 @@ porque 1 1 1 1 1 1 = 63
 - Endereço de broadcast: 10.0.0.63 (último endereço)
 - Último endereço útil: 10.0.0.62
 - Quantidade de hosts possíveis: 62
+
+
+### 🛠️ Resumo do Passo a Passo para montar uma sub-rede:
+
+1️⃣ Descubra quantos computadores (hosts) você precisa.
+✅ Inclua 2 endereços extras:
+
+   * Um para o endereço de rede.
+   * Um para o broadcast.
+   * Exemplo: se precisa conectar 50 computadores, precisa de 52 endereços no total.
+
+2️⃣ Descubra qual o tamanho da sub-rede necessária.
+✅ Pergunta: Quantos bits você precisa para os hosts?
+
+   * Use esta fórmula:
+   * Hosts possível = 2^N - 2
+   * (n = número de bits para hosts)
+   * Procure o menor "n" que satisfaça o número de hosts que você precisa.ˊ
+ 
+
+| Bits para Hosts | Hosts Disponíveis|
+--
+|2	| 2 |
+|3	| 6 |
+|4	| 14 |
+|5	| 30 |
+|6	| 62 |
+|7	| 126 |
+|8 | 254 |
+Exemplo:
+Para 50 computadores ➔ preciso de 6 bits (pois 2⁶ - 2 = 62 hosts possíveis).
+
+3️⃣ Calcule o CIDR da sub-rede.
+✅ IPV4 tem 32 bits no total.
+
+✅ Se 6 bits são para hosts, então:
+
+32
+−
+6
+=
+26
+32−6=26
+✅ Resultado: CIDR = /26
+
+4️⃣ Descubra a máscara de sub-rede.
+Veja a tabela de CIDRs para saber a máscara:
+
+
+CIDR	Máscara
+/24	255.255.255.0
+/25	255.255.255.128
+/26	255.255.255.192
+/27	255.255.255.224
+/28	255.255.255.240
+Exemplo:
+Para /26, a máscara é 255.255.255.192.
+
+5️⃣ Defina o endereço da rede.
+✅ Escolha um IP de início (depende da faixa disponível).
+
+Exemplo: 192.168.0.0/26
+
+Primeiro IP = 192.168.0.0 (Endereço de rede)
+
+Primeiro IP utilizável = 192.168.0.1
+
+6️⃣ Descubra o endereço de broadcast.
+✅ Faça todos os bits dos hosts serem 1.
+
+Exemplo para /26:
+
+Último IP utilizável = 192.168.0.62
+
+Endereço de broadcast = 192.168.0.63
+
+7️⃣ Resuma os dados da sua sub-rede.
+✅ A rede criada fica assim:
+
+Endereço de rede: 192.168.0.0
+
+Máscara: 255.255.255.192
+
+Primeiro IP disponível: 192.168.0.1
+
+Último IP disponível: 192.168.0.62
+
+Broadcast: 192.168.0.63
+
+Hosts possíveis: 62
+
+📌 RESUMINDO EM UM FLUXO
+objectivec
+Copiar
+Editar
+Quantos computadores ➔ 
+Quantos bits ➔ 
+CIDR ➔ 
+Máscara ➔ 
+Endereço de rede ➔ 
+Endereço de broadcast ➔ 
+Faixa de IPs utilizáveis
+⚡ Dica de Ouro
+Se precisar de 2 ou mais sub-redes, repita o processo para cada grupo de hosts. Ou, se puder, já reserve blocos separados no planejamento inicial!
 
 
 ## Exemplo 02: dado o IP 172.16.1.43/28
