@@ -17,7 +17,10 @@
    5.2) CIDR (/número): é a quantidade de bits reservados para identificar a rede (e o restante fica para os hosts);
 
    5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
-7) 
+
+6) INTERVALO
+7) Sistemas Operacionais
+8) 
 
 ## Vantagens desse Conhecimento
 
