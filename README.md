@@ -32,6 +32,7 @@
 
 
 <img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/vpc-aws.png" width="500">
+
 ---
 
 ## Tipos de redes
