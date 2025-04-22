@@ -27,9 +27,11 @@
 
 * Organizar suas aplicações Vivo em sub-redes privadas e seguras;
 * Entender como a sub-rede pública da Vivo isola a sub-rede privada;
-* Enteder o mapeamento desses sub-redes dentro da VPC da Vivo;
-* Garantir a segurança das lojas virtuais da Vivo e suas aplicações.
+* Enteder o mapeamento desses sub-redes dentro da VPC de uma empresa;
+* Garantir a segurança das aplicações.
 
+
+<img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/vpc-aws.png" width="500">
 ---
 
 ## Tipos de redes
