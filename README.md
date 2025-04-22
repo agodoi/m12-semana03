@@ -318,6 +318,7 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 - Último IPV4 útil: 172.16.1.46
 - Quantidade de hosts possíveis: 13
 
+---
 
 ## Exemplo 03: dado o IP 10.0.8.0/21
 #### a) Qual é máscara de sub-rede?
@@ -335,6 +336,7 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 - Último IPV4 útil: 10.0.15.254
 - Quantidade de hosts possíveis: 2046
 
+---
 
 ## Exemplo 04: 10.0.128.0/17
 
@@ -354,6 +356,8 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 - Último IPV4 útil: 10.0.255.254
 - Quantidade de hosts possíveis: 2^15 - 2 = 32.766
 
+---
+
 ## Exemplo 05: 10.0.1.64/26
 
 ### Dado o IP
@@ -372,12 +376,12 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 - Último IPV4 útil: 10.0.1.126
 - Quantidade de hosts possíveis: 2^6 - 2 = 62
 
+---
 
-# Agora pense!
+## Agora pense!
 
-Numas das instruções, você criou uma VPC 192.168.0.0/22
+Imagine que você criou uma VPC 192.168.0.0/22 na AWS.
 
-### Dado o IP 192.168.0.0/22
 #### a) Qual é máscara de sub-rede?
 #### b) Qual é o endereço de rede?
 #### c) Qual é o primeiro IPV4 disponível?
@@ -393,12 +397,13 @@ Numas das instruções, você criou uma VPC 192.168.0.0/22
 #### d) Qual é o endereço de broadcast em cada rede-sub?
 #### e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
 #### f) Quantos hosts são possíveis em cada sub-rede?
-
 ### g) As sub-redes de fato estão dentro da VPC? Justique!
 
 A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais são:
 
-# Desafio. Descubra o CIDR de cada faixa endereços gratuitos abaixo:
+---
+
+## Desafio. Descubra o CIDR de cada faixa endereços gratuitos abaixo:
 
 - Faixa Classe: 10.0.0.0 a 10.255.255.255 
 
