@@ -18,7 +18,7 @@
 
    5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
 
-6) INTERVALO
+**6) INTERVALO**
 7) Sistemas Operacionais
 8) 
 
