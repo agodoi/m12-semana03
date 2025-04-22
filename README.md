@@ -30,8 +30,11 @@
 * Enteder o mapeamento desses sub-redes dentro da VPC da Vivo;
 * Garantir a segurança das lojas virtuais da Vivo e suas aplicações.
 
+---
 
-## Tipos de redes: 
+## Tipos de redes
+
+### Por que preciso saber os tipos de rede?
 
 ### Local
   - **PAN (Personal Area Network):** basicamente feita de dispositivos de curto alcance, em especial, os sem fio, via bluetooth;
@@ -51,7 +54,11 @@ Alguns detaques da figura:
 
 * O Modelo OSI (Opened Standard Interconnection) possui 7 camadas. É uma pilha de camadas totalmente abstrata, isto é, não existe essas camadas na vida real e não correspondem à nenhuma placa específica do computador, mas ela é importante para você diagnosticar problemas e soluções.
 
+---
+
 ## Modelo OSI
+
+### Por que preciso entender o modelo OSI?
 
 * **Camada 07 - Aplicação :** cuida de tudo o que aparece na sua tela, é a aplicação;
 * **Camada 06 - Apresentação :** é o tradutor com criptografia/descriptografia;
@@ -61,11 +68,15 @@ Alguns detaques da figura:
 * **Camada 02 - Enlace :** é a camada que trata do endereço físico dos dispositivos de redes, isto é, o chassis da placa que trafega dados;
 * **Camada 01 - Física :** é a camada dos padrões elétricos, eletrônicos e mecânicos.
 
+---
+
 ## Demonstração de Montagem de Cabo UTP
 
 [VÍDEO](https://www.youtube.com/watch?v=OT_5EjDfD6M)
 
 ## Topologias de Redes
+
+### Por que preciso conhecer as topologias de redes?
 
 Os hosts podem ser organizados em algum tipo de topologia a seguir:
 
@@ -75,13 +86,17 @@ O mais comum para o ambiente de computadores é o **Estrela** que também pode s
 
 <img src="https://github.com/agodoi/SubRedes/blob/main/imgs/estrela_extendida.png" width="500">
 
+---
+
 ## Protocolo IPV4 vs IPV6
+
+### Por que existe o IPv4 e o IPv6?
 
 A figura a seguir aponta as principais diferenças. Contudo, na rede local, só se usa o IPV4.
 
-
 <img src="https://github.com/agodoi/SubRedes/blob/main/imgs/ipv4_vs_ipv6.png" width="500">
 
+---
 
 ## Redes e Sub-redes
 
@@ -128,7 +143,7 @@ f) Quantos hosts cabem nessa rede?
 
 Máscara de sub-rede é um valor numérico que é usado em redes de computadores para dividir uma rede IP em sub-redes menores. Essa máscara é usada em conjunto com um endereço IP para determinar quais bits no endereço IP representam a rede e quais bits representam o host dentro dessa rede.
 
-A parte da rede é indicada com **1**. A parte de hosts é indicada com **0** ou **X**. Vamos adotar o **X**, que significa, *irrelevante* (será uma faixa de valores e não um valor único). Para o exemplo dado **/26** teremos:
+A parte da rede é indicada com **1**. A parte de hosts é indicada com **0** ou **X**. Vamos adotar o **X**, que significa, *irrelevante* (será uma faixa de valores e não um valor único). Para o exemplo dado CIDR = **/26** teremos:
 
 |1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 X X X X X X |
 |-|-|-|-|
@@ -204,6 +219,7 @@ porque 1 1 1 1 1 1 = 63
 - Último endereço útil: 10.0.0.62
 - Quantidade de hosts possíveis: 62
 
+---
 
 ### 🛠️ Resumo do Passo a Passo para montar uma sub-rede:
 
@@ -222,7 +238,6 @@ porque 1 1 1 1 1 1 = 63
    * (n = número de bits para hosts)
    * Procure o menor "n" que satisfaça o número de hosts que você precisa.ˊ
  
-
 | Bits para Hosts | Hosts Disponíveis|
 |-|-|
 |2	| 2 |
@@ -246,13 +261,22 @@ Para 50 computadores ➔ preciso de 6 bits (pois 2⁶ - 2 = 62 hosts possíveis)
 4️⃣ Descubra a máscara de sub-rede.
 Veja a tabela de CIDRs para saber a máscara:
 
-| CIDR | Máscara |
-|-|-|
-|/24 | 255.255.255.0 |
-|/25 | 255.255.255.128 |
-|/26 | 255.255.255.192 |
-|/27 | 255.255.255.224 |
-|/28 | 255.255.255.240 |
+| CIDR | Máscara            |
+|:----:|:------------------:|
+| /15  | 255.254.0.0         |
+| /16  | 255.255.0.0         |
+| /17  | 255.255.128.0       |
+| /18  | 255.255.192.0       |
+| /19  | 255.255.224.0       |
+| /20  | 255.255.240.0       |
+| /21  | 255.255.248.0       |
+| /22  | 255.255.252.0       |
+| /23  | 255.255.254.0       |
+| /24  | 255.255.255.0       |
+| /25  | 255.255.255.128     |
+| /26  | 255.255.255.192     |
+| /27  | 255.255.255.224     |
+| /28  | 255.255.255.240     |
 
 Exemplo:
 Para /26, a máscara é 255.255.255.192.
@@ -277,6 +301,7 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 * Broadcast: 192.168.0.63
 * Hosts possíveis: 62
 
+---
 
 ## Exemplo 02: dado o IP 172.16.1.43/28
 #### a) Qual é máscara de sub-rede?
