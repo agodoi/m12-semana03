@@ -2,7 +2,14 @@
 
 ## Terças e quintas. Professor de horário parcial. Nesses 2 dias, podem contar comigo!
 
-# Semana 03 - Sistemas Operacionais e Redes de Computadores 
+# Semana 03 - Sistemas Operacionais e Redes de Computadores
+
+🧠 Vamos estudar nessa aula:
+
+* IPV4: é o sistema de endereçamento de computadores (32 bits);
+* Sub-rede: é uma divisão lógica de uma rede maior;
+* CIDR (/número): é a quantidade de bits reservados para identificar a rede (e o restante fica para os hosts);
+* Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.).
 
 
 # Sub-redes e demais conceitos
