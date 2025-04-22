@@ -4,39 +4,35 @@
 
 # Semana 03 - Sistemas Operacionais e Redes de Computadores
 
-🧠 Vamos estudar nessa aula:
-
-* IPV4: é o sistema de endereçamento de computadores (32 bits);
-* Sub-rede: é uma divisão lógica de uma rede maior;
-* CIDR (/número): é a quantidade de bits reservados para identificar a rede (e o restante fica para os hosts);
-* Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.).
-
-
-# Sub-redes e demais conceitos
-
-Nessa instrução, vamos falar especialmente de mapeamento de redes locais usando IPV4 para criar redes e subredes, mas também vamos transitar por:
+## 🧠 Vamos revisar nessa aula:
 
 1) Organização dos protocolos em camadas (Modelo OSI);
 2) Protocolo IPV6;
 3) Topologias de redes;
 4) TCP e UDP;
+5) IPV4: é o sistema de endereçamento de computadores (32 bits);
+  5.1) Sub-rede: é uma divisão lógica de uma rede maior;
+  5.2) CIDR (/número): é a quantidade de bits reservados para identificar a rede (e o restante fica para os hosts);
+  5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
+6) 
 
-# Vantagens no seu projeto
+## Vantagens desse Conhecimento
 
 * Organizar suas aplicações Vivo em sub-redes privadas e seguras;
 * Entender como a sub-rede pública da Vivo isola a sub-rede privada;
 * Enteder o mapeamento desses sub-redes dentro da VPC da Vivo;
 * Garantir a segurança das lojas virtuais da Vivo e suas aplicações.
 
-Existe dois tipos de redes: 
 
-* Local
+## Tipos de redes: 
+
+### Local
   - **PAN (Personal Area Network):** basicamente feita de dispositivos de curto alcance, em especial, os sem fio, via bluetooth;
   - **LAN (Local Area Network):** feita de cabos e WiFi, conectando computadores, notebooks, impressores e servidores
   - **MAN (Metropolitan Area Network):** feita de fibra óptica e rádio tipo minilink
     
-* Mundial
-  - **WAN (Wide Area Network):** feita de fibra óptica e satélite. A Internet se mistura com uma WAN.
+### Mundial
+  - **WAN (Wide Area Network):** feita de fibra óptica e satélite. A Internet se mistura com a WAN.
 
 Ambas as redes servem para conectar os hosts (que são end-devices numa grande rede chamada Internet).
 
@@ -46,7 +42,7 @@ Os hosts se comunincam usando diversos protocolos que trabalham de **camada N pa
 
 Alguns detaques da figura:
 
-* O Modelo OSI (Opened Standard Interconnection) possui 7 camadas. É uma pilha de camadas totalmente abstrata, isto é, não existe essas camadas na vida real e não correspondem à nenhuma placa específica do computador;
+* O Modelo OSI (Opened Standard Interconnection) possui 7 camadas. É uma pilha de camadas totalmente abstrata, isto é, não existe essas camadas na vida real e não correspondem à nenhuma placa específica do computador, mas ela é importante para você diagnosticar problemas e soluções.
 
 ## Modelo OSI
 
@@ -69,7 +65,6 @@ Os hosts podem ser organizados em algum tipo de topologia a seguir:
 <img src="https://github.com/agodoi/SubRedes/blob/main/imgs/network-topology.png" width="500">
 
 O mais comum para o ambiente de computadores é o **Estrela** que também pode ser estendido para **Estrela Estendida** quando uma estrela dá origem para outra estrela.
-
 
 <img src="https://github.com/agodoi/SubRedes/blob/main/imgs/estrela_extendida.png" width="500">
 
