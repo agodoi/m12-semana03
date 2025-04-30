@@ -323,64 +323,6 @@ f) Quantos hosts são possíveis?
 
 ---
 
-### Exemplo 03: dado o IP 10.0.8.0/21
-a) Qual é máscara de sub-rede?
-b) Qual é o endereço de rede?
-c) Qual é o primeiro IPV4 disponível?
-d) Qual é o endereço de broadcast na rede?
-e) Qual é o último endereço IPV4 útil disponível?
-f) Quantos hosts são possíveis?
-
-**Respostas:**
-- Máscara de sub-rede: 255.255.248.0
-- Endereço de rede: 10.0.8.0
-- 1º IPV4: 10.0.8.1
-- Endereço de broadcast: 10.0.15.255
-- Último IPV4 útil: 10.0.15.254
-- Quantidade de hosts possíveis: 2046
-
----
-
-### Exemplo 04: 10.0.128.0/17
-
-#### Dado o IP
-a) Qual é máscara de sub-rede?
-b) Qual é o endereço de rede?
-c) Qual é o primeiro IPV4 disponível?
-d) Qual é o endereço de broadcast na rede?
-e) Qual é o último endereço IPV4 útil disponível?
-f) Quantos hosts são possíveis?
-
-**Respostas:**
-- Máscara de sub-rede: 255.255.128.0
-- Endereço de rede: 10.0.128.0
-- 1º IPV4: 10.0.128.1
-- Endereço de broadcast: 10.0.255.255
-- Último IPV4 útil: 10.0.255.254
-- Quantidade de hosts possíveis: 2^15 - 2 = 32.766
-
----
-
-### Exemplo 05: 10.0.1.64/26
-
-#### Dado o IP
-a) Qual é máscara de sub-rede?
-b) Qual é o endereço de rede?
-c) Qual é o primeiro IPV4 disponível?
-d) Qual é o endereço de broadcast na rede?
-e) Qual é o último endereço IPV4 útil disponível?
-f) Quantos hosts são possíveis?
-
-**Respostas:**
-- Máscara de sub-rede: 255.255.255.192
-- Endereço de rede: 10.0.1.64
-- 1º IPV4: 10.0.1.65
-- Endereço de broadcast: 10.0.1.127
-- Último IPV4 útil: 10.0.1.126
-- Quantidade de hosts possíveis: 2^6 - 2 = 62
-
----
-
 ### Agora pense!
 
 Imagine que você criou uma VPC 192.168.0.0/22 na AWS.
@@ -404,7 +346,6 @@ g) As sub-redes de fato estão dentro da VPC? Justique!
 
 A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais são:
 
----
 
 ## Desafio. Descubra o CIDR de cada faixa endereços gratuitos abaixo:
 
@@ -413,6 +354,8 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 - Faixa Classe: 172.16.0.0 a 172.31.255.255
 
 - Faixa Classe: 192.168.0.0 a 192.168.255.255
+
+Antigamente, chamávamos essas faixas gratuitas de **Classe A**, **Classe B** e **Classe C**, mas isso caiu em desuso. O correto é chamar de CIDR 8, 12 e 16.
 
 --- 
 
