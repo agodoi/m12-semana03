@@ -365,8 +365,8 @@ Antigamente, chamávamos essas faixas gratuitas de **Classe A**, **Classe B** e 
 
 ## Sistemas Operacionais
 
-1.1) O que é um Sistema Operacional?
-✅ Um Sistema Operacional (SO) é o software principal que atua como ponte entre o hardware (físico) e os programas (aplicações) que você utiliza.
+### 1.1) O que é um Sistema Operacional?
+Um Sistema Operacional (SO) é o software principal que atua como ponte entre o hardware (físico) e os programas (aplicações) que você utiliza.
 
 Ele gerencia recursos como:
 
@@ -375,7 +375,7 @@ Ele gerencia recursos como:
 * Dispositivos de entrada e saída (mouse, teclado, disco rígido)
 * Execução de programas
 
-✅ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo funcione de forma eficiente e segura, sem conflitos.
+Em resumo: o SO é um gerente que organiza o uso do computador para que tudo funcione de forma eficiente e segura, sem conflitos.
 
 🖥️ Exemplos de sistemas operacionais:
 
@@ -385,10 +385,17 @@ Ele gerencia recursos como:
 * Android
 * iOS
 
-1.2) História dos Sistemas Operacionais
+### 1.2) História dos Sistemas Operacionais
 
 * 1950: computadores eram enormes e operados manualmente (sem SO). Programadores controlavam diretamente o hardware.
 * 1960: surgem os primeiros sistemas operacionais batch: programas executados em lotes (ex: IBM OS/360). Surgimento de conceitos como sistemas de tempo compartilhado: vários usuários usavam o mesmo computador ao mesmo tempo (ex: MULTICS).
+| Inovação | Descrição |
+|:----:|:------------------:|
+|🔐 Segurança por níveis (ring-based security)	| Inspirou os modos usuário/kernel modernos
+|🧠 Memória virtual	| Permitia que os programas usassem mais memória do que havia fisicamente
+|📁 Sistema de arquivos hierárquico	| Primeira implementação moderna com pastas e subpastas
+|👥 Suporte a múltiplos usuários	| Vários usuários podiam usar o sistema ao mesmo tempo, com isolamento
+|🔄 Compartilhamento de tempo (time-sharing)	 | Dividia o tempo da CPU entre vários usuários de forma interativa
 * 1970: Unix foi criado: sistema modular, escrito em C, revolucionando a portabilidade. Aparecem os primeiros micros (computadores pessoais), surgem sistemas como CP/M.
 * 1980-1990: popularização de sistemas para PCs: MS-DOS, depois Windows. Interfaces gráficas (GUI) tornam o uso mais amigável. Evolução dos sistemas de rede.
 * 2000 em diante: explosão do Linux e sistemas baseados em Open Source. Sistemas embarcados em celulares (Android, iOS). Virtualização e sistemas para nuvem (AWS, Azure, etc).
