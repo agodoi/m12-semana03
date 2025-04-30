@@ -441,11 +441,27 @@ d) O resultado é retornado para o programa.
 🏛️ Existem várias formas de estruturar um SO. As principais:
 
 * Monolítica: todo o sistema (drivers, gerenciamento de processos, memória) é um grande bloco único.
-   * Exemplo: primeiros [Unix](https://www.tuhs.org/) e as distribuições Linux [Ubuntu](https://ubuntu.com/download) [Debian](https://www.debian.org/index.pt.html) [Fedora](https://fedoraproject.org/) e [Arch Linux](https://archlinux.org/), mas com uma diferença é que seus kernels monolítico são modulares. Exemplo: comandos como lsmod, insmod, modprobe e rmmod interagem com módulos no Linux.
+   * Exemplo: primeiros [Unix](https://www.tuhs.org/) e as distribuições Linux [Ubuntu](https://ubuntu.com/download), [Debian](https://www.debian.org/index.pt.html), [Fedora](https://fedoraproject.org/) e [Arch Linux](https://archlinux.org/), mas com uma diferença é que seus kernels monolítico são modulares. Exemplo: comandos como lsmod, insmod, modprobe e rmmod interagem com módulos no Linux.
    * Vantagem: rápido.
    * Desvantagem: difícil de manter ou modificar.
  
 <img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/monolito.jpg" width="500">
+
+| Distribuição | Base/Origem       | Vantagens                                                                 | Desvantagens                                                             | Aplicações recomendadas                                    |
+|--------------|-------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|
+| **Ubuntu**   | Baseada no Debian | - Fácil de usar (foco no usuário final)                                   | - Mais pesado que outras distros leves                                  | Ambientes educacionais, escritórios, servidores web, iniciantes |
+|              |                   | - Ampla comunidade e suporte oficial                                      | - Pode vir com pacotes desatualizados para manter estabilidade           |                                                             |
+|              |                   | - Ótima para iniciantes e ambientes corporativos                          | - Telemetria ativada por padrão em versões desktop                       |                                                             |
+| **Debian**   | Independente       | - Extremamente estável e confiável                                        | - Lançamentos lentos (conservador)                                      | Servidores críticos, ambientes de produção, projetos longos |
+|              |                   | - Base para outras distribuições (ex: Ubuntu)                             | - Menos amigável para iniciantes                                         |                                                             |
+|              |                   | - Ótima para servidores e ambientes críticos                              |                                                                           |                                                             |
+| **Fedora**   | Patrocinada pela Red Hat | - Software mais atualizado, foco em inovação                          | - Suporte de versões relativamente curto (13 meses)                     | Estações de trabalho de desenvolvedores, testes de tecnologias novas |
+|              |                   | - Integrações rápidas com tecnologias da Red Hat e GNOME                  | - Pode ter bugs por estar na "vanguarda"                                 |                                                             |
+|              |                   | - Boa escolha para desenvolvedores                                        |                                                                           |                                                             |
+| **Arch Linux** | Independente     | - Totalmente personalizável (você monta tudo do zero)                     | - Requer conhecimento técnico avançado                                  | Usuários avançados, ambientes de laboratório, aprendizado de SO |
+|              |                   | - Rolling release (sempre atualizado)                                     | - Atualizações podem quebrar o sistema se não forem bem gerenciadas     |                                                             |
+|              |                   | - Documentação excelente (Wiki Arch)                                      | - Instalação complexa, sem interface gráfica por padrão                  |                                                             |
+
 
 * Microkernel: apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
    * Exemplo: [MINIX](https://www.minix3.org) desenvolvido pelo Andrew Tanenbaum, [QNX](https://blackberry.qnx.com/en) desenvolvido pela Blackberry.
