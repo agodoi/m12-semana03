@@ -448,7 +448,7 @@ d) O resultado é retornado para o programa.
 <img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/monolito.jpg" width="500">
 
 * Microkernel: apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
-   * Exemplo: MINIX, QNX.
+   * Exemplo: [MINIX](https://www.minix3.org) desenvolvido pelo Andrew Tanenbaum, [QNX](https://blackberry.qnx.com/en).
    * Vantagem: modularidade e segurança.
    * Desvantagem: pode ser mais lento (mais comunicação entre componentes).
 
