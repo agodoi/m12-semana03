@@ -441,7 +441,7 @@ d) O resultado é retornado para o programa.
 🏛️ Existem várias formas de estruturar um SO. As principais:
 
 * Monolítica: todo o sistema (drivers, gerenciamento de processos, memória) é um grande bloco único.
-   * Exemplo: primeiros Unix.
+   * Exemplo: primeiros [Unix](https://www.tuhs.org/) e as distribuições Linux [Ubuntu](https://ubuntu.com/download) [Debian](https://www.debian.org/index.pt.html) [Fedora](https://fedoraproject.org/) e [Arch Linux](https://archlinux.org/), mas com uma diferença é que seus kernels monolítico são modulares. Exemplo: comandos como lsmod, insmod, modprobe e rmmod interagem com módulos no Linux.
    * Vantagem: rápido.
    * Desvantagem: difícil de manter ou modificar.
  
