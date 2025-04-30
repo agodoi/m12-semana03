@@ -445,7 +445,7 @@ d) O resultado é retornado para o programa.
    * Vantagem: rápido.
    * Desvantagem: difícil de manter ou modificar.
  
-<img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/monolito.jpeg" width="500">
+<img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/monolito.jpg" width="500">
 
 * Microkernel: apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
    * Exemplo: MINIX, QNX.
