@@ -327,12 +327,12 @@ f) Quantos hosts são possíveis?
 
 Imagine que você criou uma VPC 192.168.0.0/22 na AWS.
 
-a) Qual é máscara de sub-rede?
-b) Qual é o endereço de rede?
-c) Qual é o primeiro IPV4 disponível?
-d) Qual é o endereço de broadcast na rede?
-e) Qual é o último endereço IPV4 útil disponível?
-f) Quantos hosts são possíveis?
+   a) Qual é máscara de sub-rede?
+   b) Qual é o endereço de rede?
+   c) Qual é o primeiro IPV4 disponível?
+   d) Qual é o endereço de broadcast na rede?
+   e) Qual é o último endereço IPV4 útil disponível?
+   f) Quantos hosts são possíveis?
 
 ### E também criou uma sub-rede pública 192.168.0.0/24 e uma sub-rede privada 192.168.1.0/24
 
