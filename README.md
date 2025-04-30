@@ -448,16 +448,16 @@ d) O resultado é retornado para o programa.
 <img src="https://github.com/agodoi/m12-semana03/blob/main/imgs/monolito.jpg" width="500">
 
 * Microkernel: apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
-   * Exemplo: [MINIX](https://www.minix3.org) desenvolvido pelo Andrew Tanenbaum, [QNX](https://blackberry.qnx.com/en).
+   * Exemplo: [MINIX](https://www.minix3.org) desenvolvido pelo Andrew Tanenbaum, [QNX](https://blackberry.qnx.com/en) desenvolvido pela Blackberry.
    * Vantagem: modularidade e segurança.
    * Desvantagem: pode ser mais lento (mais comunicação entre componentes).
 
 * Camadas: o SO é organizado em camadas, onde uma depende da outra.
-   * Exemplo: THE System.
+   * Exemplo: THE (Technische Hogeschool Eindhoven) System, criado por Edsger W. Dijkstra (um dos pais da ciência da computação). Nunca esteve publicamente disponível para download.
    * Vantagem: fácil depurar.
    * Desvantagem: pode ser menos eficiente.
 
 * Máquina Virtual: cria ambientes virtuais para rodar vários sistemas no mesmo hardware.
-   * Exemplo: VMware, Hyper-V.
+   * Exemplo: [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion), [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview?pivots=windows)
    * Vantagem: isolamento e flexibilidade.
    * Desvantagem: sobrecarga de performance.
