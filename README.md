@@ -389,6 +389,7 @@ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo fun
 
 * 1950: computadores eram enormes e operados manualmente (sem SO). Programadores controlavam diretamente o hardware.
 * 1960: surgem os primeiros sistemas operacionais batch: programas executados em lotes (ex: IBM OS/360). Surgimento de conceitos como sistemas de tempo compartilhado: vários usuários usavam o mesmo computador ao mesmo tempo (ex: MULTICS).
+  
 | Inovação | Descrição |
 |:----:|:------------------:|
 |🔐 Segurança por níveis (ring-based security)	| Inspirou os modos usuário/kernel modernos
@@ -396,6 +397,7 @@ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo fun
 |📁 Sistema de arquivos hierárquico	| Primeira implementação moderna com pastas e subpastas
 |👥 Suporte a múltiplos usuários	| Vários usuários podiam usar o sistema ao mesmo tempo, com isolamento
 |🔄 Compartilhamento de tempo (time-sharing)	 | Dividia o tempo da CPU entre vários usuários de forma interativa
+
 * 1970: Unix foi criado: sistema modular, escrito em C, revolucionando a portabilidade. Aparecem os primeiros micros (computadores pessoais), surgem sistemas como CP/M.
 * 1980-1990: popularização de sistemas para PCs: MS-DOS, depois Windows. Interfaces gráficas (GUI) tornam o uso mais amigável. Evolução dos sistemas de rede.
 * 2000 em diante: explosão do Linux e sistemas baseados em Open Source. Sistemas embarcados em celulares (Android, iOS). Virtualização e sistemas para nuvem (AWS, Azure, etc).
