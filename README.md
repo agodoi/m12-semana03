@@ -476,4 +476,8 @@ d) O resultado é retornado para o programa.
 * Máquina Virtual: cria ambientes virtuais para rodar vários sistemas no mesmo hardware.
    * Exemplo: [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion), [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview?pivots=windows)
    * Vantagem: isolamento e flexibilidade.
-   * Desvantagem: sobrecarga de performance.
+   * Desvantagem: sobrecarga de performance. 
+
+--- 
+## Kahoot!
+---
