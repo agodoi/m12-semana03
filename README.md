@@ -388,7 +388,7 @@ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo fun
 ### 1.2) História dos Sistemas Operacionais
 
 * 1950: computadores eram enormes e operados manualmente (sem SO). Programadores controlavam diretamente o hardware.
-* 1960: surgem os primeiros sistemas operacionais batch: programas executados em lotes (ex: IBM OS/360). Surgimento de conceitos como sistemas de tempo compartilhado: vários usuários usavam o mesmo computador ao mesmo tempo (ex: MULTICS).
+* 1960: surgem os primeiros sistemas operacionais batch: programas executados em lotes (ex: IBM OS/360). Surgimento de conceitos como sistemas de tempo compartilhado: vários usuários usavam o mesmo computador ao mesmo tempo. Exemplo, MULTICS:
   
 | Inovação | Descrição |
 |:----:|:------------------:|
@@ -402,7 +402,8 @@ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo fun
 * 1980-1990: popularização de sistemas para PCs: MS-DOS, depois Windows. Interfaces gráficas (GUI) tornam o uso mais amigável. Evolução dos sistemas de rede.
 * 2000 em diante: explosão do Linux e sistemas baseados em Open Source. Sistemas embarcados em celulares (Android, iOS). Virtualização e sistemas para nuvem (AWS, Azure, etc).
 
-1.3) Conceitos de Sistemas Operacionais
+### 1.3) Conceitos de Sistemas Operacionais
+
 🧠 Principais conceitos:
 
 * Processo: é um programa em execução. Pode ser interrompido, reativado, finalizado.
@@ -413,8 +414,9 @@ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo fun
 * Segurança e Proteção: impede que processos interfiram uns nos outros, protege o sistema contra acessos não autorizados.
 * Interface de Usuário: pode ser linha de comando (CLI) ou interface gráfica (GUI).
 
-1.4) Como são feitas as chamadas de sistema?
-📞 Chamadas de sistema (System Calls) são portas de entrada para que os programas comuniquem-se com o Sistema Operacional.
+### 1.4) Como são feitas as chamadas de sistema?
+
+📞 Chamadas de sistema (System Calls) são portas de entrada para que os programas comuniquem-se com o SO.
 
 ➡️ Um programa não acessa diretamente o hardware (por segurança).
 ➡️ Em vez disso, ele faz uma chamada de sistema, pedindo ao SO para fazer algo por ele.
@@ -434,37 +436,26 @@ b) O SO intercepta essa chamada através de uma interrupção.
 c) O SO executa o serviço requisitado em modo privilegiado (kernel mode).
 d) O resultado é retornado para o programa.
 
-1.5) Arquiteturas de Sistemas Operacionais
+### 1.5) Arquiteturas de Sistemas Operacionais
+
 🏛️ Existem várias formas de estruturar um SO. As principais:
 
-Monolítica
-Todo o sistema (drivers, gerenciamento de processos, memória) é um grande bloco único.
+* Monolítica: todo o sistema (drivers, gerenciamento de processos, memória) é um grande bloco único.
+   * Exemplo: primeiros Unix.
+   * Vantagem: rápido.
+   * Desvantagem: difícil de manter ou modificar.
 
-Exemplo: primeiros Unix.
+* Microkernel: apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
+   * Exemplo: MINIX, QNX.
+   * Vantagem: modularidade e segurança.
+   * Desvantagem: pode ser mais lento (mais comunicação entre componentes).
 
-Vantagem: rápido.
-Desvantagem: difícil de manter ou modificar.
+* Camadas: o SO é organizado em camadas, onde uma depende da outra.
+   * Exemplo: THE System.
+   * Vantagem: fácil depurar.
+   * Desvantagem: pode ser menos eficiente.
 
-Microkernel
-Apenas funções básicas ficam no núcleo (kernel), o resto funciona como serviços externos.
-
-Exemplo: MINIX, QNX.
-
-Vantagem: modularidade e segurança.
-Desvantagem: pode ser mais lento (mais comunicação entre componentes).
-
-Camadas
-O SO é organizado em camadas, onde uma depende da outra.
-
-Exemplo: THE System.
-
-Vantagem: fácil depurar.
-Desvantagem: pode ser menos eficiente.
-
-Máquina Virtual
-Cria ambientes virtuais para rodar vários sistemas no mesmo hardware.
-
-Exemplo: VMware, Hyper-V.
-
-Vantagem: isolamento e flexibilidade.
-Desvantagem: sobrecarga de performance.
+* Máquina Virtual: cria ambientes virtuais para rodar vários sistemas no mesmo hardware.
+   * Exemplo: VMware, Hyper-V.
+   * Vantagem: isolamento e flexibilidade.
+   * Desvantagem: sobrecarga de performance.
