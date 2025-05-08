@@ -113,8 +113,11 @@ E as sub-redes são redes menores que nascem a partir de uma rede, e para isso, 
 
 #### Dado o IP 10.0.0.0/26
 a) Qual é o endereço de rede?
+
 b) Qual é o primeiro IPV4 disponível?
+
 c) Qual é o endereço de broadcast na rede?
+
 d) Qual é o último endereço IPV4 útil disponível?
 
 O /26 significa que o CIDR = 26, então significa 26 bits são fixos, isto é, uma máscara de 26 bits "1" e 6 bits irrelevantes marcados por x.
@@ -304,10 +307,15 @@ Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast 
 
 ### Exemplo 02: dado o IP 172.16.1.43/28
 a) Qual é máscara de sub-rede?
+
 b) Qual é o endereço de rede?
+
 c) Qual é o primeiro IPV4 disponível?
+
 d) Qual é o endereço de broadcast na rede?
+
 e) Qual é o último endereço IPV4 útil disponível?
+
 f) Quantos hosts são possíveis?
 
 **Respostas:**
@@ -324,21 +332,31 @@ f) Quantos hosts são possíveis?
 
 Imagine que você criou uma VPC 192.168.0.0/22 na AWS.
 
-   a) Qual é máscara de sub-rede?
-   b) Qual é o endereço de rede?
-   c) Qual é o primeiro IPV4 disponível?
-   d) Qual é o endereço de broadcast na rede?
-   e) Qual é o último endereço IPV4 útil disponível?
-   f) Quantos hosts são possíveis?
+a) Qual é máscara de sub-rede?
+
+b) Qual é o endereço de rede?
+
+c) Qual é o primeiro IPV4 disponível?
+
+d) Qual é o endereço de broadcast na rede?
+
+e) Qual é o último endereço IPV4 útil disponível?
+
+f) Quantos hosts são possíveis?
 
 ### E também criou uma sub-rede pública 192.168.0.0/24 e uma sub-rede privada 192.168.1.0/24
 
 a) Qual é máscara de cada sub-rede?
+
 b) Qual é o endereço de rede de cada sub-rede?
+
 c) Qual é o primeiro IPV4 disponível de cada sub-rede?
+
 d) Qual é o endereço de broadcast em cada rede-sub?
 e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
+
 f) Quantos hosts são possíveis em cada sub-rede?
+
 g) As sub-redes de fato estão dentro da VPC? Justique!
 
 A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais são:
@@ -429,8 +447,11 @@ Em resumo: o SO é um gerente que organiza o uso do computador para que tudo fun
 ✅ Como funciona:
 
 a) Um programa faz uma chamada de sistema.
+
 b) O SO intercepta essa chamada através de uma interrupção.
+
 c) O SO executa o serviço requisitado em modo privilegiado (kernel mode).
+
 d) O resultado é retornado para o programa.
 
 ### 1.5) Arquiteturas de Sistemas Operacionais
