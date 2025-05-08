@@ -146,14 +146,14 @@ A parte da rede é indicada com **1**. A parte de hosts é indicada com **X**, q
 | 255 | 255 | 255 | 192 |
 
 
-#### b) Endereço de rede é o primeiro endereço da faixa (quando os bits X são só ZERO): 
+#### b) Endereço de rede é o primeiro endereço da faixa: 
 
-Pega o IP original dado no enunciado:
+Basta pegar o IP original dado no enunciado:
 
 | 10 | 0 | 0 | 0 |
 |-|-|-|-|
 
-Compare com a máscara e encontre os bits flexíveis **X** e não mexa com os bits marcados em **1**:
+Comparar com a máscara e encontrar os bits flexíveis **X** e não mexer com os bits marcados em **1**:
 
 |1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 X X X X X X |
 |-|-|-|-|
@@ -165,7 +165,7 @@ Resulta em:
 |-|-|-|-|
 | 10 | 0 | 0 | 0 0 X X X X X X |
 
-Finalmente, coloque **0** no lugar dos **X** para encontrar o endereço da rede, porque endereço de rede é sempre o primeiro endereço possível:
+Finalmente, coloque **0** no lugar dos **X** para encontrar o **endereço da rede**, porque endereço de rede é sempre o primeiro endereço possível:
 
 | 10 | 0 | 0 | 0 0 0 0 0 0 0 0 |
 |-|-|-|-|
