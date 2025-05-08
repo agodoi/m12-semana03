@@ -139,7 +139,7 @@ f) Quantos hosts cabem nessa rede?
 
 Máscara de sub-rede é um valor numérico que é usado em redes de computadores para dividir uma rede IP em sub-redes menores. Essa máscara é usada em conjunto com um endereço IP para determinar quais bits no endereço IP representam a rede e quais bits representam o host dentro dessa rede.
 
-A parte da rede é indicada com **1**. A parte de hosts é indicada com **0** ou **X**. Vamos adotar o **X**, que significa, *irrelevante* (será uma faixa de valores e não um valor único). Para o exemplo dado CIDR = **/26** teremos:
+A parte da rede é indicada com **1**. A parte de hosts é indicada com **X**, que significa, *irrelevante* (será uma faixa de valores e não um valor único). Para o exemplo dado CIDR = **/26** teremos:
 
 |1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 X X X X X X |
 |-|-|-|-|
