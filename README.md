@@ -72,7 +72,7 @@ Alguns detaques da figura:
 
 ### Demonstração de Montagem de Cabo UTP
 
-[VÍDEO](https://www.youtube.com/watch?v=OT_5EjDfD6M)
+[Curiosidade: como crimpar cabo](https://www.youtube.com/watch?v=OT_5EjDfD6M)
 
 ### Topologias de Redes
 
