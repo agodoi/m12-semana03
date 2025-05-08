@@ -258,6 +258,7 @@ Para 50 computadores ➔ preciso de 6 bits (pois 2⁶ - 2 = 62 hosts possíveis)
 ✅ Resultado: CIDR = /26
 <br>
 4️⃣ Descubra a máscara de sub-rede.
+<br>
 Veja a tabela de CIDRs para saber a máscara:
 
 | CIDR | Máscara            |
@@ -285,16 +286,17 @@ Para /26, a máscara é 255.255.255.192.
 ✅ Escolha um IP de início (depende da faixa disponível).
 <br>
 Exemplo: 192.168.0.0/26. Primeiro IP = 192.168.0.0 (Endereço de rede). Primeiro IP utilizável = 192.168.0.1
-
+<br>
 6️⃣ Descubra o endereço de broadcast.
 <br>
 ✅ Faça todos os bits dos hosts serem 1.
-
+<br>
 Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast = 192.168.0.63
-
+<br>
 7️⃣ Resuma os dados da sua sub-rede.
+<br>
 ✅ A rede criada fica assim: 
-
+<br>
 * endereço de rede: 192.168.0.0
 * Máscara: 255.255.255.192
 * Primeiro IP disponível: 192.168.0.1
@@ -352,6 +354,7 @@ b) Qual é o endereço de rede de cada sub-rede?
 c) Qual é o primeiro IPV4 disponível de cada sub-rede?
 
 d) Qual é o endereço de broadcast em cada rede-sub?
+
 e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
 
 f) Quantos hosts são possíveis em cada sub-rede?
