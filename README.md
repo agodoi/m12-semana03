@@ -217,7 +217,7 @@ porque 1 1 1 1 1 1 = 63
 
 ---
 
-#### 🛠️ Resumo do Passo a Passo para montar uma sub-rede:
+#### 🛠️ Passo a Passo para montar uma sub-rede na Prática:
 
 1️⃣ Descubra quantos computadores (hosts) você precisa.
 ✅ Inclua 2 endereços extras:
