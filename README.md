@@ -220,6 +220,7 @@ porque 1 1 1 1 1 1 = 63
 #### 🛠️ Passo a Passo para montar uma sub-rede na Prática:
 
 1️⃣ Descubra quantos computadores (hosts) você precisa.
+<br>
 ✅ Inclua 2 endereços extras:
 
    * Um para o endereço de rede.
@@ -227,7 +228,8 @@ porque 1 1 1 1 1 1 = 63
    * Exemplo: se precisa conectar 50 computadores, precisa de 52 endereços no total.
 
 2️⃣ Descubra qual o tamanho da sub-rede necessária.
-✅ Pergunta: Quantos bits você precisa para os hosts?
+<br>
+✅ Pergunta: quantos bits você precisa para os hosts?
 
    * Use esta fórmula: **Hosts possível = 2<sup>n</sup> - 2**
    * (n = número de bits para hosts)
@@ -247,12 +249,14 @@ Exemplo:
 Para 50 computadores ➔ preciso de 6 bits (pois 2⁶ - 2 = 62 hosts possíveis).
 
 3️⃣ Calcule o CIDR da sub-rede.
+<br>
 ✅ IPV4 tem 32 bits no total.
+<br>
 ✅ Se 6 bits são para hosts, então:
 
 32 - 6 = 26
 ✅ Resultado: CIDR = /26
-
+<br>
 4️⃣ Descubra a máscara de sub-rede.
 Veja a tabela de CIDRs para saber a máscara:
 
@@ -277,11 +281,13 @@ Exemplo:
 Para /26, a máscara é 255.255.255.192.
 
 5️⃣ Defina o endereço da rede.
+<br>
 ✅ Escolha um IP de início (depende da faixa disponível).
-
+<br>
 Exemplo: 192.168.0.0/26. Primeiro IP = 192.168.0.0 (Endereço de rede). Primeiro IP utilizável = 192.168.0.1
 
 6️⃣ Descubra o endereço de broadcast.
+<br>
 ✅ Faça todos os bits dos hosts serem 1.
 
 Exemplo para /26: último IP utilizável = 192.168.0.62. Endereço de broadcast = 192.168.0.63
