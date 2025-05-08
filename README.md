@@ -183,7 +183,7 @@ Que é o mesmo que **10.0.0.0**
 
 #### d) Qual o endereço de broadcast da rede? 
 
-Quando os **X** flexíveis são semopre **1**: 
+Quando os **X** flexíveis são sempre **1**: 
 
 | 10 | 0 | 0 | 0 0 1 1 1 1 1 1 |
 |-|-|-|-|
