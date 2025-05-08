@@ -18,15 +18,12 @@
 
    5.3) Hosts: são os dispositivos que você precisa conectar (computadores, impressoras, sensores, etc.);
 
-**6) INTERVALO**
-
-7) Sistemas Operacionais
-8) 
+6) Sistemas Operacionais
 
 ### Vantagens desse Conhecimento
 
-* Organizar suas aplicações Vivo em sub-redes privadas e seguras;
-* Entender como a sub-rede pública da Vivo isola a sub-rede privada;
+* Organizar suas aplicações em sub-redes privadas e seguras;
+* Entender como a sub-rede pública isola a sub-rede privada;
 * Enteder o mapeamento desses sub-redes dentro da VPC de uma empresa;
 * Garantir a segurança das aplicações.
 
