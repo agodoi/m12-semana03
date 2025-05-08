@@ -252,9 +252,8 @@ Para 50 computadores ➔ preciso de 6 bits (pois 2⁶ - 2 = 62 hosts possíveis)
 <br>
 ✅ IPV4 tem 32 bits no total.
 <br>
-✅ Se 6 bits são para hosts, então:
-
-32 - 6 = 26
+✅ Se 6 bits são para hosts, então: 32 - 6 = 26
+<br>
 ✅ Resultado: CIDR = /26
 <br>
 4️⃣ Descubra a máscara de sub-rede.
